@@ -21,3 +21,14 @@ git clone https://github.com/cheninator/trace-scape
 cd trace-scape/
 npm install && npm start
 ```
+
+# Docker
+
+Trace-scape can be run as a Docker container. To do so, simply build from the Docker file using the following commands:
+
+```bash
+sudo docker build -t trace-scape .
+sudo docker run -p 3000:3000 -d trace-scape
+```
+
+You can then access the trace-scape application on your browser by going to http://localhost:3000
